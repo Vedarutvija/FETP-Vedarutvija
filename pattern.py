@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # pattern.py
 def generate_pattern(n):
     input_string = "FORMULAQSOLUTIONS"
@@ -24,3 +25,6 @@ def generate_pattern(n):
         pattern_output += "\n"
 
     return pattern_output
+=======
+
+>>>>>>> origin/master
