@@ -2,6 +2,7 @@ from datetime import datetime, timedelta
 import json
 import os
 import sqlite3
+from pattern import generate_pattern
 os.environ['OAUTHLIB_INSECURE_TRANSPORT'] ='1'
 from dotenv import load_dotenv
 load_dotenv()
@@ -47,19 +48,25 @@ def load_user(user_id):
 def index():
     if current_user.is_authenticated:
         indian_time = get_current_indian_time()
+
+        # Add the following lines to get user input and generate the pattern
+        user_input = request.args.get("user_input")
+        pattern_output = generate_pattern(int(user_input)) if user_input else ""
+
         return (
-            '<div style="text-align: center; font-family: \'Your Beautiful Font\';">'
+            '<div style="text-align: center; font-family: ;">'
             f'<p>Hello, {current_user.name}! You\'re logged in! Email: {current_user.email}</p>'
             f'<p>Indian Time: {indian_time}</p>'
             '<div><p>Google Profile Picture:</p>'
             f'<img src="{current_user.profile_pic}" alt="Google profile pic" style="max-width: 100%; height: auto;"></img></div>'
-            '<form method="post" action="/" style="margin-top: 20px;">'
+            '<form method="get" action="/" style="margin-top: 20px;">'  # Change method to get
             '<label for="user_input">Enter an Integer:</label>'
             '<input type="number" id="user_input" name="user_input" required>'
             '<button type="submit" class="button" style="margin-top: 10px;">Display</button>'
+            '</form>'
+            f'<pre>{pattern_output}</pre>'  # Display the pattern output
             '</br>'
             f'<a class="button" href="/logout" style="margin-top: 10px;">Logout</a>'
-            '</form>'
             '</div>'
         )
     else:
@@ -68,7 +75,6 @@ def index():
             '<a class="button" href="/login" style="margin-top: 20px;">Google Login</a>'
             '</div>'
         )
-
 @app.route("/login")
 def login():
     google_provider_cfg = get_google_provider_cfg()
