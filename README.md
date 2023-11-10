@@ -6,7 +6,8 @@
 
 
 
-![Vedarutvija-FETP-Day1-Screenshot 1](https://github.com/Vedarutvija/FETP-Vedarutvija/assets/52282654/a7aa9d6f-6984-4eee-a3fa-12bcdfc3090e)
+![Vedarutvija-FETP-Day1-Screenshot 1](https://github.com/Vedarutvija/FETP-Vedarutvija/assets/52282654/9d747372-be9e-4916-a83c-1e63e0d41b1b)
+
 
 
 
