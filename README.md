@@ -11,5 +11,6 @@ Google Authentication project using Python and Flask
 
 
 
-![Vedarutvija-FETP-Day1-Screenshot 2](https://github.com/Vedarutvija/FETP-Vedarutvija/assets/52282654/a0fa70f1-8b08-4c33-9b0d-f695e4843031)
+![Vedarutvija-FETP-Day1-Screenshot 2](https://github.com/Vedarutvija/FETP-Vedarutvija/assets/52282654/96cf04e0-191c-4a63-9e71-edeabfe3bc4b)
+
 
