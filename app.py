@@ -48,14 +48,26 @@ def index():
     if current_user.is_authenticated:
         indian_time = get_current_indian_time()
         return (
-            f"<p>Hello, {current_user.name}! You're logged in! Email: {current_user.email}</p>"
-            f"<p>Indian Time: {indian_time}</p>"
-            "<div><p>Google Profile Picture:</p>"
-            f'<img src="{current_user.profile_pic}" alt="Google profile pic"></img></div>'
-            '<a class="button" href="/logout">Logout</a>'
+            '<div style="text-align: center; font-family: \'Your Beautiful Font\';">'
+            f'<p>Hello, {current_user.name}! You\'re logged in! Email: {current_user.email}</p>'
+            f'<p>Indian Time: {indian_time}</p>'
+            '<div><p>Google Profile Picture:</p>'
+            f'<img src="{current_user.profile_pic}" alt="Google profile pic" style="max-width: 100%; height: auto;"></img></div>'
+            '<form method="post" action="/" style="margin-top: 20px;">'
+            '<label for="user_input">Enter an Integer:</label>'
+            '<input type="number" id="user_input" name="user_input" required>'
+            '<button type="submit" class="button" style="margin-top: 10px;">Display</button>'
+            '</br>'
+            f'<a class="button" href="/logout" style="margin-top: 10px;">Logout</a>'
+            '</form>'
+            '</div>'
         )
     else:
-        return '<a class="button" href="/login">Google Login</a>'
+        return (
+            '<div style="text-align: center; font-family: \'Your Beautiful Font\';">'
+            '<a class="button" href="/login" style="margin-top: 20px;">Google Login</a>'
+            '</div>'
+        )
 
 @app.route("/login")
 def login():
