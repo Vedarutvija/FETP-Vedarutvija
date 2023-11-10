@@ -2,8 +2,9 @@
 
 
 
+![image](https://github.com/Vedarutvija/FETP-Vedarutvija/assets/52282654/8731fe61-17f1-40af-b2c4-d4ca66307373)
 
-![image](https://github.com/Vedarutvija/FETP-Vedarutvija/assets/52282654/c06519e3-3efa-4992-9e7f-4439286a2e36)
+
 
 ![Vedarutvija-FETP-Day1-Screenshot 1](https://github.com/Vedarutvija/FETP-Vedarutvija/assets/52282654/a7aa9d6f-6984-4eee-a3fa-12bcdfc3090e)
 
