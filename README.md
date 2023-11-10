@@ -1,5 +1,5 @@
 # FETP-Vedarutvija
-
+Google Authentication project using Python and Flask
 
 
 ![image](https://github.com/Vedarutvija/FETP-Vedarutvija/assets/52282654/8731fe61-17f1-40af-b2c4-d4ca66307373)
