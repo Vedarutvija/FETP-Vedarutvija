@@ -54,7 +54,7 @@ def index():
         pattern_output = generate_pattern(int(user_input)) if user_input else ""
 
         return (
-            '<div style="text-align: center; font-family: ;">'
+            '<div style="text-align: center">'
             f'<p>Hello, {current_user.name}! You\'re logged in! Email: {current_user.email}</p>'
             f'<p>Indian Time: {indian_time}</p>'
             '<div><p>Google Profile Picture:</p>'
