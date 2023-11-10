@@ -11,4 +11,5 @@
 
 
 
-![Vedarutvija-FETP-Day1-Screenshot 2](https://github.com/Vedarutvija/FETP-Vedarutvija/assets/52282654/e45ece93-b7f7-4699-8b16-916a06dd8480)
+![Vedarutvija-FETP-Day1-Screenshot 2](https://github.com/Vedarutvija/FETP-Vedarutvija/assets/52282654/a0fa70f1-8b08-4c33-9b0d-f695e4843031)
+
